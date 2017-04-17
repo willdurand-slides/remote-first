@@ -99,7 +99,7 @@ body {
 .reveal ol,
 .reveal dl,
 .reveal ul {
-  display: inline-grid;
+  display: inline-block;
   text-align: left;
   margin: 0 0 0 1em; }
 
@@ -107,7 +107,14 @@ body {
   list-style-type: decimal; }
 
 .reveal ul {
-  list-style-type: disc; }
+  list-style-type: none;
+}
+
+.reveal ul li:before {
+  content: '\2022';
+  color: #5ec3a0;
+  padding-right: 0.5em;
+}
 
 .reveal ul ul {
   list-style-type: square; }
